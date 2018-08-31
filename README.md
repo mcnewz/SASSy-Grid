@@ -61,25 +61,25 @@ Compile the CSS using [SASS commands](https://sass-lang.com/documentation/file.S
 
 #### Compile
 ```
-sass src/grid.sass ../dist/grid.css
+sass src/grid.sass dist/grid.css
 ```
 
 #### Compile and Watch
 
 ```
-sass --watch src/grid.sass:../dist/grid.css
+sass --watch src/grid.sass:dist/grid.css
 ```
 
 #### Minify
 
 ```
-sass src/grid.sass ../dist/grid.min.css --style compressed
+sass src/grid.sass dist/grid.min.css --style compressed
 ```
 
 #### Minify and Watch
 
 ```
-sass --watch src/grid.sass:../dist/grid.min.css --style compressed
+sass --watch src/grid.sass:dist/grid.min.css --style compressed
 ```
 
 ## Include
