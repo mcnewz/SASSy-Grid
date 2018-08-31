@@ -1,0 +1,132 @@
+// Breakpoints
+$sm:    "screen and (max-width: 32em)"
+$md:    "screen and (max-width: 64em)"
+$lg:    "screen and (max-width: 120em)"
+$xl:    "screen and (min-width: 120em)"
+
+// Grid
+$gap:     10px
+$columns: 12
+
+// SASS
+@for $i from 1 through $columns
+	.grid-#{$i}
+		grid-gap: $gap
+		display: grid
+		grid-template-columns: repeat($i, 1fr)
+
+	@media #{$xl}
+		@for $i from 1 through $columns
+			.grid-xl-#{$i}
+				grid-template-columns: repeat($i, 1fr)
+
+	@media #{$lg}
+		@for $i from 1 through $columns
+			.grid-lg-#{$i}
+				grid-template-columns: repeat($i, 1fr)
+
+	@media #{$md}
+		@for $i from 1 through $columns
+			.grid-md-#{$i}
+				grid-template-columns: repeat($i, 1fr)
+
+	@media #{$sm}
+		@for $i from 1 through $columns
+			.grid-sm-#{$i}
+				grid-template-columns: repeat($i, 1fr)
+	
+@for $i from 1 through $columns
+	.col-pos-#{$i}
+		grid-column: $i
+
+	@media #{$xl}
+		@for $i from 1 through $columns
+			.col-pos-xl-#{$i}
+				grid-column: $i
+
+	@media #{$lg}
+		@for $i from 1 through $columns
+			.col-pos-lg-#{$i}
+				grid-column: $i
+
+	@media #{$md}
+		@for $i from 1 through $columns
+			.col-pos-md-#{$i}
+				grid-column: $i
+
+	@media #{$sm}
+		@for $i from 1 through $columns
+			.col-pos-sm-#{$i}
+				grid-column: $i
+
+@for $i from 1 through $columns
+	.col-#{$i}
+		grid-column: span $i
+
+	@media #{$xl}
+		@for $i from 1 through $columns
+			.col-xl-#{$i}
+				grid-column: span $i
+
+	@media #{$lg}
+		@for $i from 1 through $columns
+			.col-lg-#{$i}
+				grid-column: span $i
+
+	@media #{$md}
+		@for $i from 1 through $columns
+			.col-md-#{$i}
+				grid-column: span $i
+
+	@media #{$sm}
+		@for $i from 1 through $columns
+			.col-sm-#{$i}
+				grid-column: span $i
+
+@for $i from 1 through $columns
+	.row-#{$i}
+		grid-row: span $i
+
+	@media #{$xl}
+		@for $i from 1 through $columns
+			.row-xl-#{$i}
+				grid-row: span $i
+
+	@media #{$lg}
+		@for $i from 1 through $columns
+			.row-lg-#{$i}
+				grid-row: span $i
+
+	@media #{$md}
+		@for $i from 1 through $columns
+			.row-md-#{$i}
+				grid-row: span $i
+
+	@media #{$sm}
+		@for $i from 1 through $columns
+			.row-sm-#{$i}
+				grid-row: span $i
+
+@for $i from 1 through $columns
+	.row-pos-#{$i}
+		grid-row: $i
+
+	@media #{$xl}
+		@for $i from 1 through $columns
+			.row-pos-xl-#{$i}
+				grid-row: $i
+
+	@media #{$lg}
+		@for $i from 1 through $columns
+			.row-pos-lg-#{$i}
+				grid-row: $i
+
+	@media #{$md}
+		@for $i from 1 through $columns
+			.row-pos-md-#{$i}
+				grid-row: $i
+
+	@media #{$sm}
+		@for $i from 1 through $columns
+			.row-pos-sm-#{$i}
+				grid-row: $i
