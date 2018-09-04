@@ -27,6 +27,18 @@ Use the class name `col-{number of columns to span}` to set the column span to i
   ...
 ```
 
+Use the class name `col-pos-{column position}` to assign a specific column position to a grid item.
+```html
+<div class="grid-5">
+  <div class="col-2 col-pos-2">
+    I span 2 of 5 columns, starting on column 2.
+  </div>
+  <div class="col-1 col-pos-5">
+    I span 1 of 5 columns, starting on column 5.
+  </div>
+  ...
+```
+
 Use the class name `row-{number of rows to span}` to set the row span to individual grid items.
 ```html
 <div class="grid-5">
