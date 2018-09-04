@@ -4,9 +4,11 @@ $md:    "screen and (max-width: 64em)"
 $lg:    "screen and (max-width: 120em)"
 $xl:    "screen and (min-width: 120em)"
 
-// Grid
-$gap:     10px	// Space between columns
-$columns: 12		// Maximum number of columns
+// Grid Gap
+$gap:     10px
+
+// Columns
+$columns: 12
 
 // SASS
 @for $i from 1 through $columns
@@ -106,27 +108,3 @@ $columns: 12		// Maximum number of columns
 		@for $i from 1 through $columns
 			.row-sm-#{$i}
 				grid-row: span $i
-
-@for $i from 1 through $columns
-	.row-pos-#{$i}
-		grid-row: $i
-
-	@media #{$xl}
-		@for $i from 1 through $columns
-			.row-pos-xl-#{$i}
-				grid-row: $i
-
-	@media #{$lg}
-		@for $i from 1 through $columns
-			.row-pos-lg-#{$i}
-				grid-row: $i
-
-	@media #{$md}
-		@for $i from 1 through $columns
-			.row-pos-md-#{$i}
-				grid-row: $i
-
-	@media #{$sm}
-		@for $i from 1 through $columns
-			.row-pos-sm-#{$i}
-				grid-row: $i
